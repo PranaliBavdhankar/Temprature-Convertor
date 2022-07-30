@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css"
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Temerature Converter</h1>
+      </div>
+
+      <div class="input-tags">
+        <div class="input">
+          <!-- <label for="cel"> Degrees</label> -->
+          <input
+            type="number"
+            id="cel"
+            placeholder="Enter Degree"
+            oninput="tempChange(this.value)"
+            onchange="tempChange(this.value)"
+          />
+        </div>
+        <div class="inputOption">
+          <select>
+            <option>Celcius</option>
+            <option>Fahrenheit</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="wordResult">Result</div>
+        <div id="result">°F</div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
